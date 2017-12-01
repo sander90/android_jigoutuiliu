@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sander.updateliudemo.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextureView
+            android:id="@+id/main_preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="384dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp" />
+
+        <TextureView
+            android:id="@+id/second_preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="384dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorEE"
+            android:hint="请输入用户名字"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/inputRoomid"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorEE"
+            android:hint="请输入RoomID"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/button_setting"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="开始启动"
+            android:textSize="15px" />
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
